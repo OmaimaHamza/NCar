@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 public class Owner{
     String Nom;
     String Prenom;
@@ -6,6 +7,8 @@ public class Owner{
     public List<Vente> ventes;
     public Owner(String Nom,String Prenom){
         this.Nom=Nom;this.Prenom=Prenom;
+        voiture= new ArrayList<Voiture>();
+        ventes= new  ArrayList<Vente>();
     }
     public void removeCar(Voiture voiture,Owner NewOwner){
         for(int i=0;i<this.voiture.size();i++){
@@ -21,7 +24,8 @@ public class Owner{
         newsale.setNewOwner(new Owner(this.Nom,this.Prenom));
         ventes.add(newsale);
     }
-    public void setVoiture(Voiture voiture){
+
+    public void setVoiture(Voiture voiture) {
         this.voiture.add(voiture);
     }
 }

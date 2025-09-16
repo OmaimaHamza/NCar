@@ -8,5 +8,24 @@ public class Voiture{
         this.Kilometrage=Kilometrage;this.Marque=Marque;
         this.Matricule=Matricule;this.Proprietaire=Owner;
     }
-    
+
+    public Double getKilometrage() {
+        return Kilometrage;
+    }
+
+    public Owner getProprietaire() {
+        return Proprietaire;
+    }
+
+
+    public String getMatricule() {
+        return Matricule;
+    }
+
+    public String getMarque() {
+        return Marque;
+    }
+    public String getModele() {
+        return Modele;
+    }
 }
